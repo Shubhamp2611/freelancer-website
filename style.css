@@ -1,11 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-} 
+}
+
+/* Project Detail Styles */
+.project-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.rating-stars {
+  color: #ffc107;
+}
+
+.project-stats p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.skills-required {
+  margin: 2rem 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-apply,
+.btn-save {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-apply {
+  background: #007bff;
+  color: white;
+}
+
+.btn-save {
+  background: #6c757d;
+  color: white;
+}
+
+/* Job Posting Form Styles */
+.post-project {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.post-project h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-submit {
+  background: #28a745;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-cancel {
+  background: #dc3545;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+small {
+  display: block;
+  margin-top: 0.3rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
 
 body {
   position: relative;
@@ -335,7 +508,43 @@ footer{
   font-weight: bold;
 }
 
-.jobs fom
+.jobs form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+
+}
+
+/* job details */
+
+.job-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8fcfa;
+  border: 1px solid #51a995;
+  border-radius: 38px;
+  padding: 2rem;
+}
+
+.job-img-row {
+  display: flex;
+  align-items: center;
+}
+
+.job-header img{
+  width: 100px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 15rem;
+  margin-right: 2rem;
+}
+
+.job-description p{
+  padding-bottom: 2rem;
+}
 
 @media(max-width: 1200px){
   .obj-width {

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSTACK - Search Jobs</title>
+        <link rel="stylesheet" href="../style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+
+        <!-- Header  Section-->
+        <header>
+            <div id="navbar" class="obj-width">
+                <a href="">
+                    <img class="logo" src="../images/logo.png" alt="Error">
+                </a>
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="../contact.html">Contanct Us</a></li>
+
+
+                    <button id="w-btn">Join</button>
+                </ul>
+                <i id="bar" class="bx bx-menu">
+                </i>
+            </div>
+        </header>
+
+        <div id="jobDetails" class="extra-space obj-width">
+            
+            
+        </div>
+
+
+
+        <!-- Footer  Section-->
+        <footer class="footer">
+            <div class="obj-width">
+                <div class="top">
+                    <div>
+                        <img class="logo" src="../images/logo.png" alt="">
+                        <p>Search your desiered jobs.</p>
+                    </div>
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i></a>
+                    <a href="#">
+                        <i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#">
+                        <i class='bx bxl-whatsapp'></i></a>
+                    <a href="#">
+                        <i class='bx bxl-twitter'></i></a>
+                </div>
+
+                <div class="bottom">
+                    <div>
+                        <h3>Project</h3>
+                        <a href="#">Changelog</a>
+                        <a href="#">Status</a>
+                        <a href="#">Licence</a>
+                        <a href="#">All version</a>
+                    </div>
+                    <div>
+                        <h3>Community</h3>
+                        <a href="#">Github</a>
+                        <a href="#">Issue</a>
+                        <a href="#">Project</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                    <div>
+                        <h3>Help</h3>
+                        <a href="#">Support</a>
+                        <a href="#">Troubleshooting</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div>
+                        <h3>Others</h3>
+                        <a href="#">Term & Condition</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Licence</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+       <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+        const urlParam = new
+        URLSearchParams(window.
+            location.search);
+            const index = urlParam.get
+            ("id");
+
+            const selectJob = jCategory
+            [index];
+
+            const jobDetailsContainer = document.getElementById("jobDetails")
+
+            jobDetailsContainer.innerHTML 
+            =`
+             
+            <div class="job-header">
+                <div class="job-img-row">
+                    <img src=${selectJob.image} alt="" />
+                </div>
+                <div>
+                    <h2>${selectJob.companyName}</h2>
+                    <span>USA</span>
+                </div>
+                <div><a id="g-btn" href="#">Apply now</a></div>
+            </div>
+            
+            <div class="features sec-space obj-width">
+                    <div class="fe-box">
+                        <div>
+                            <img src="../images/vacancy.png" alt="">
+                            <h3>Vacancy</h3>
+                            <p>01 Vacancy</p>
+                        </div>
+                        <div>
+                            <img src="../images/fe 1.png" alt="">
+                            <h3>Position</h3>
+                            <p>Web Developer</p>
+                        </div>
+                        <div>
+                            <img src="../images/hour.png" alt="">
+                            <h3>Hours</h3>
+                            <p>50h/week</p>
+                        </div>
+                        <div>
+                            <img src="../images/salary.png" alt="">
+                            <h3>salary</h3>
+                            <p>$900-1200</p>
+                        </div>
+                    </div>
+            </div>
+             
+            <div class="job-description">
+                <h3>Job Description</h3>
+                <p>"We are seeking a skilled Web Developer to design, develop, and maintain responsive and dynamic websites and web applications. The ideal candidate should have strong expertise in front-end and/or back-end development, with proficiency in technologies such as HTML, CSS, JavaScript, and frameworks like Bootstrap or Tailwind CSS. Experience with frontend libraries like React, Angular, or Vue, along with backend technologies such as Node.js, Express.js, or Java with Spring Boot, is a plus. The role involves writing clean, efficient, and well-documented code, optimizing applications for performance and security, and ensuring cross-browser compatibility. The candidate will collaborate with designers, developers, and project managers to deliver high-quality web solutions while staying updated with the latest web development trends. Debugging and troubleshooting website issues, as well as maintaining scalability and responsiveness, will also be key responsibilities in this role."</p>
+
+                <h3>Employment Status</h3>
+                <p>- Full Time</p>
+
+                <h3>Workplace</h3>
+                <p>- Work form home</p>
+
+                <h3> Eduacational Requirement</h3>
+                <p>- bachelor degree in any comaputer science course.</p>
+
+                <h3>Expreince Requirement</h3>
+                <p>- 2 to 5 years</p>
+            </div>
+            
+            
+            `
+        });
+       </script>
+
+    </body>
+    <script src="job-list.js"></script>
+    <script src="../frist.js"></script>
+    <script src="jobsearch.js"></script>
+</html>
